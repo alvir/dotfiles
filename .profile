@@ -27,6 +27,9 @@ alias gtk='git diff $* | kompare -'
 alias gitk='gitk --all'
 alias gitxa='gitx --all '
 
+# Rails aliases
+alias rg='rake routes | grep -i'
+
 # Enable completion for custom git aliases
 complete -o default -o nospace -F _git_add ga
 complete -o default -o nospace -F _git_commit gca
@@ -43,4 +46,3 @@ fi
 # Completion for terminitor - https://github.com/bobthecow/terminitor-completion
 # ln -s Projects/terminitor-completion/terminitor-completion.bash .terminitor-completion
 source ~/.terminitor-completion
-# rvm system
